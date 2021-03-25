@@ -44,16 +44,15 @@ margin-top: 10px;
    gap: 0px 10px;
 }
 
-.pads>div{
+.pads>.pad{
    height: 110px;
    width: 110px;
-   background-image: linear-gradient(to right top, #ee4545, #eb3b3a, #e8302e, #e52422, #e11414);
-   border-radius: 10%;
-   opacity: 0.02;
+   background-image: linear-gradient(to right top, #de1616, #c81414, #b31212, #9e1010, #890e0e);
+   border-radius: 15%;
+   opacity: 0.2;
 }
 
-.pads>div:hover{
-   opacity: 1;
+.pads>.pad:hover{
    cursor: pointer;
    box-shadow: 0px 0px 20px 4px rgb(194, 31, 31);
 }
