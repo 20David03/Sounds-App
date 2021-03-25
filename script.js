@@ -15,6 +15,10 @@ window.addEventListener("load", ()=>{
         }
         else{
             sounds[index].pause()
+                     pad.onmouseout = function() {
+                    pad.style.opacity=0.2
+
+            };
         }
 
         sounds[index].onended=function(){
