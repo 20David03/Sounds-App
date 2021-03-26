@@ -14,10 +14,8 @@ body{
 }
 .app{
    height: 100vh;
-   /* display: grid;
-   grid-template-columns: 1fr 1fr; */
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    align-items: center;
 }
 header{
@@ -26,29 +24,25 @@ header{
    align-items: center;
    text-align: center;
    flex-direction: column;
-   color: rgb(34, 230, 34);
+   color: rgb(54, 196, 49);
 }
 header h1{
-   font-size: 40px;
+   font-size: 50px;
 }
 
-header p{
-font-size: 20px;
-}
 .pads{
    width: 700px;
    height: 80vh;
    display: grid;
    grid-template-columns: repeat(6, 1fr);
    grid-template-rows: repeat(4, 120px);
-   gap: 0px 10px;
 }
 
 .pads>.pad{
    height: 110px;
    width: 110px;
    background-image: linear-gradient(to right bottom, #e5432b, #ee6a1c, #f18e0a, #efaf0b, #e9d027);
-   border-radius: 10%;
+   border-radius: 15%;
    opacity: 0.2;
 }
 
