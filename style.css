@@ -24,8 +24,9 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
+   text-align: center;
    flex-direction: column;
-   color: rgb(222, 235, 109);
+   color: rgb(34, 230, 34);
 }
 header h1{
    font-size: 40px;
@@ -33,7 +34,6 @@ header h1{
 
 header p{
 font-size: 20px;
-margin-top: 10px;
 }
 .pads{
    width: 700px;
@@ -47,20 +47,36 @@ margin-top: 10px;
 .pads>.pad{
    height: 110px;
    width: 110px;
-   background-image: linear-gradient(to right top, #de1616, #c81414, #b31212, #9e1010, #890e0e);
+   background-image: linear-gradient(to right bottom, #e5432b, #ee6a1c, #f18e0a, #efaf0b, #e9d027);
    border-radius: 10%;
    opacity: 0.2;
 }
 
 .pads>.pad:hover{
    cursor: pointer;
-   box-shadow: 0px 0px 20px 4px rgb(194, 31, 31);
+   box-shadow: 0px 0px 20px 4px #e5432b;
 }
 
 @media only screen and (max-width:1076px){
    .app{
       flex-direction: column;
       margin-top: 30px;
+   }
+}
+@media only screen and (max-width:765px){
+   .pads{
+      grid-template-columns: repeat(5, 120px);
+      grid-template-rows: repeat(6, 120px);
+      justify-content: center;
+      max-width: 80%;
+   }
+}
+@media only screen and (max-width:675px){
+   .pads{
+      grid-template-columns: repeat(4, 120px);
+      grid-template-rows: repeat(7, 120px);
+      justify-content: center;
+      max-width: 80%;
    }
 }
 
